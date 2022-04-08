@@ -25,7 +25,7 @@ class #CLASS_NAME# {
   final Locale _locale;
 
   static #CLASS_NAME# of(BuildContext context) => 
-    Localizations.of<#CLASS_NAME#>(context, #CLASS_NAME#)!;
+    Localizations.of<#CLASS_NAME#>(context, #CLASS_NAME#);
 
   String _getText(String key) =>
     _localizedValues[key] ?? '** \$key not found';
@@ -92,7 +92,7 @@ class #CLASS_NAME# {
 
   static Future<#CLASS_NAME#> load(Locale locale) async {
     final translations = #CLASS_NAME#(locale);
-    _localizedValues = _allValues[locale.toString()]!;
+    _localizedValues = _allValues[locale.toString()];
     return translations;
   }
 }
