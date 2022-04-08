@@ -80,7 +80,7 @@ class CodeGenerator {
       for (final match in matches) {
         final parameterType = match.group(2) == 'd' ? 'int' : 'String';
         parameters +=
-            'required $parameterType ${_getParameterNameFromPlaceholder(match.group(0)!)}, ';
+            '@required $parameterType ${_getParameterNameFromPlaceholder(match.group(0)!)}, ';
       }
 
       result =
