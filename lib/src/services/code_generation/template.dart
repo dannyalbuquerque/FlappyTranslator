@@ -11,7 +11,7 @@ import 'package:flutter/widgets.dart';
 class #CLASS_NAME# {
   /// Fields area
 
-  static late Map<String, String> _localizedValues;
+  static Map<String, String> _localizedValues;
 
   /// Values area
 
